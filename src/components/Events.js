@@ -8,6 +8,8 @@ export default class Events extends React.Component {
                <Text> Events happening in Bengaluru.</Text>
                 <Button title="BACK TO HOME" onPress={() => this.props.navigation.navigate('Homescreen')}
                  />
+                 <Button title="MSG" onPress={() => this.props.navigation.navigate('Messages')}
+                 />
             </View>
         );
     }
