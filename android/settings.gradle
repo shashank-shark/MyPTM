@@ -1,0 +1,3 @@
+rootProject.name = 'MyPTM'
+
+include ':app'
