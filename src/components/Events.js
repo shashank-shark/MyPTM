@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default class Homescreen extends React.Component {
+export default class Events extends React.Component {
     render () {
         return (
             <View style={styles.container}>
-                <Text>Sai Vidya Institute of Technology.</Text>
-                <Button title="EVENTS" onPress={() => this.props.navigation.navigate('Events')}
+               <Text> Events happening in Bengaluru.</Text>
+                <Button title="BACK TO HOME" onPress={() => this.props.navigation.navigate('Homescreen')}
                  />
             </View>
         );

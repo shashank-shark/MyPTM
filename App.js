@@ -1,7 +1,4 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
  * @format
  * @flow
  */
@@ -10,7 +7,7 @@
  import AppNavigator from './src/navigators/AppNavigator';
 
  export default class App extends Component {
-   render() {
+  render() {
      return (
       <AppNavigator />
      );
