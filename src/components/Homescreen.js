@@ -10,6 +10,9 @@ import {
   Alert
 } from 'react-native';
 
+import AwesomeButton from "react-native-really-awesome-button";
+import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
+
 export default class Homescreen extends Component {
 
   constructor(props) {
@@ -50,7 +53,7 @@ export default class Homescreen extends Component {
         </TouchableHighlight>
 
         <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('restore_password')}>
-            <Text>Forgot your password?</Text>
+            <AwesomeButtonRick type="primary">Forgot your password?</AwesomeButtonRick>
         </TouchableHighlight>
 
         <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
