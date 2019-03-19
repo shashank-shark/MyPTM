@@ -8,6 +8,8 @@ export default class Homescreen extends React.Component {
                 <Text>Sai Vidya Institute of Technology.</Text>
                 <Button title="EVENTS" onPress={() => this.props.navigation.navigate('Events')}
                  />
+                 <Button title="ESCORT" onPress={() => this.props.navigation.navigate('Escort')}
+                 />
             </View>
         );
     }
