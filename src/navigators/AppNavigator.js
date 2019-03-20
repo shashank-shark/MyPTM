@@ -6,7 +6,12 @@ import Messages from '../components/Messages';
 import Escort from '../components/Escort';
 
 const App = createStackNavigator({
-    Homescreen: { screen: Homescreen },
+    Homescreen: { screen: Homescreen,
+        navigationOptions: {
+            title: 'LOGIN',
+            header: null,
+        }
+     },
     Events: { screen: Events },
     Messages : { screen : Messages },
     Escort: {screen : Escort},

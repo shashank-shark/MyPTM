@@ -10,10 +10,7 @@ import {
   Alert
 } from 'react-native';
 
-import AwesomeButton from "react-native-really-awesome-button";
-import AwesomeButtonRick from 'react-native-really-awesome-button/src/themes/rick';
-
-export default class Homescreen extends Component {
+export default class LoginView extends Component {
 
   constructor(props) {
     super(props);
@@ -26,6 +23,10 @@ export default class Homescreen extends Component {
   onClickListener = (viewId) => {
     Alert.alert("Alert", "Button pressed "+viewId);
   }
+
+  static navigationOptions = {
+    title: 'LOGIN',
+  };
 
   render() {
     return (
@@ -53,7 +54,7 @@ export default class Homescreen extends Component {
         </TouchableHighlight>
 
         <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('restore_password')}>
-            <AwesomeButtonRick type="primary">Forgot your password?</AwesomeButtonRick>
+            <Text>Forgot your password?</Text>
         </TouchableHighlight>
 
         <TouchableHighlight style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
